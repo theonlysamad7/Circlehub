@@ -1,0 +1,195 @@
+.page {
+  min-height: 100vh;
+  background: #f7f8f4;
+  color: #17231f;
+}
+
+.header {
+  height: 82px;
+  padding: 0 max(22px, calc((100vw - 1120px) / 2));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7ebe5;
+}
+
+.brand {
+  color: #17231f;
+  font-size: 23px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.brand span {
+  color: #245b45;
+}
+
+.backLink {
+  color: #526158;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.content {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 75px 22px 100px;
+}
+
+.eyebrow {
+  color: #56806a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.content > h1 {
+  margin: 13px 0 10px;
+  font-size: clamp(34px, 5vw, 48px);
+  letter-spacing: -1.8px;
+}
+
+.intro {
+  margin: 0;
+  color: #758078;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 42px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 25px;
+  border: 1px solid #e5eae4;
+  border-radius: 15px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px #17231f0d;
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.symbol {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #ddf3e6;
+  color: #245b45;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.category {
+  color: #758078;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 19px;
+}
+
+.card > p {
+  min-height: 48px;
+  margin: 0;
+  color: #758078;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 17px;
+  border-top: 1px solid #edf0ec;
+  color: #56806a;
+  font-size: 11px;
+}
+
+.cardBottom span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.message {
+  margin-top: 38px;
+  padding: 35px;
+  border: 1px solid #e5eae4;
+  border-radius: 15px;
+  background: #fff;
+  color: #758078;
+  line-height: 1.7;
+}
+
+.message h2 {
+  margin: 0 0 8px;
+  color: #17231f;
+  font-size: 20px;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message a {
+  display: inline-block;
+  margin-top: 15px;
+  color: #245b45;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.message button {
+  margin-top: 15px;
+  padding: 10px 17px;
+  border: 0;
+  border-radius: 8px;
+  background: #245b45;
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 540px) {
+  .content {
+    padding-top: 48px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 22px;
+  }
+}

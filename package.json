@@ -9,16 +9,26 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@hot-labs/near-connect": "^0.12.0",
+    "@supabase/supabase-js": "^2.118.0",
+    "@tanstack/react-query": "^5.105.0",
+    "bs58": "^6.0.0",
+    "near-api-js": "^7.4.0",
     "next": "16.4.3",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "viem": "^2.57.12",
+    "wagmi": "^3.7.9"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "autoprefixer": "^10.6.1",
     "eslint": "^9",
     "eslint-config-next": "16.4.3",
+    "postcss": "^8.5.31",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }
 }
