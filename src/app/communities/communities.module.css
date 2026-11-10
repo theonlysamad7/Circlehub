@@ -33,7 +33,7 @@
 .content {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 75px 22px 100px;
+  padding: 75px 0 100px;
 }
 
 .eyebrow {
@@ -175,6 +175,11 @@
 }
 
 @media (max-width: 800px) {
+  .content {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

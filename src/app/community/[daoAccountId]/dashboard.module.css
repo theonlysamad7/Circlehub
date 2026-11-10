@@ -1,7 +1,7 @@
 .page{min-height:100vh;background:#f7f8f4;color:#172b22;font-family:'DM Sans',sans-serif}
 .header{height:76px;padding:0 30px;border-bottom:1px solid #e4e9e1;display:flex;align-items:center;justify-content:space-between;gap:22px;background:rgba(247,248,244,.96)}
 .brand{display:flex;align-items:center;gap:10px;font-size:21px;font-weight:800;letter-spacing:-.8px;white-space:nowrap}
-.brandMark{width:36px;height:36px;border-radius:12px;background:#245b45;color:white;display:grid;place-items:center;font-family:Manrope,sans-serif;font-size:21px}
+.brandMark{width:36px;height:36px;display:block;flex:0 0 auto}
 .brandAccent,.footer a span{color:#245b45}
 .topNav{display:flex;align-items:center;gap:24px;color:#66736a;font-size:13px}
 .topNav a:hover{color:#245b45}
