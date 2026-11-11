@@ -4,6 +4,23 @@
 
 CircleHub is a community finance platform built on NEAR. It gives clubs, student groups, collectives and other communities a shared space to manage treasuries, organize fundraising events, coordinate financial decisions and make community funds more transparent.
 
+## Our Inspiration
+
+Communities are built around shared goals, but managing the money
+behind those goals is often more difficult than it should be.
+
+From student organizations planning events to groups pooling resources
+for shared initiatives, people need a reliable way to contribute,
+coordinate and make decisions together.
+
+CircleHub was inspired by this gap. We wanted to bring the financial
+side of community life into one transparent space, where contributions
+are visible, spending decisions are collective, and communities can
+organize their resources with greater confidence.
+
+We believe community finance should be about more than moving money.
+It should help people build trust and achieve things together.
+
 **Live demo:** https://circlehub7.vercel.app
 **Repository:** https://github.com/theonlysamad7/Circlehub
 
@@ -226,6 +243,17 @@ src/
   data/
   lib/
 ```
+
+## What Makes CircleHub Different?
+
+CircleHub brings three important parts of community finance together:
+
+- **Collective ownership:** Community treasuries are governed through DAO proposals and voting rather than relying entirely on informal financial arrangements.
+- **Flexible participation:** NEAR Intents allows contributors to start with supported assets while fundraising targets remain denominated in NEAR USDC.
+- **Smarter planning:** NEAR AI helps communities think through fundraising goals, budgets and spending decisions without taking control of their funds.
+
+Together, these capabilities make CircleHub a shared financial
+workspace rather than just another fundraising page.
 
 ## Project status
 
