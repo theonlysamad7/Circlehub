@@ -335,6 +335,9 @@ export default function Home() {
             </p>
           </div>
 
+        </div>
+
+        <div className="communities-link-row">
           <a href="/communities" className="text-link">
             My communities <span>↗</span>
           </a>

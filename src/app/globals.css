@@ -643,6 +643,12 @@ em { color: var(--green); font-style: normal; }
 
 .communities-section { padding-top: 82px; padding-bottom: 82px; }
 
+.communities-link-row {
+  display: flex;
+  justify-content: flex-start;
+  margin: 22px 0 20px;
+}
+
 /* COMMUNITY CARDS */
 .community-grid {
   display: grid;

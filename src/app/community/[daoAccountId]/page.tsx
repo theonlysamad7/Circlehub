@@ -319,13 +319,75 @@ function CommunityDashboard() {
         const decimals = transferAsset === "USDC" ? 6 : 24;
         const atomicAmount = parseUnits(amount, decimals);
 
-        kind = {
-          Transfer: {
-            token_id: transferAsset === "USDC" ? USDC_CONTRACT : "",
-            receiver_id: recipient,
-            amount: atomicAmount.toString(),
-          },
-        };
+        if (transferAsset === "USDC") {
+          const registrationResult = await viewMethod(
+            USDC_CONTRACT,
+            "storage_balance_of",
+            { account_id: recipient },
+          );
+
+          const registration = decode(registrationResult);
+
+          if (!registration) {
+            const boundsResult = await viewMethod(
+              USDC_CONTRACT,
+              "storage_balance_bounds",
+            );
+            const bounds = decode(boundsResult);
+            const registrationDeposit = String(bounds?.min || "");
+
+            if (!/^\d+$/.test(registrationDeposit)) {
+              throw new Error(
+                "Could not retrieve the USDC registration deposit. Please try again.",
+              );
+            }
+
+            const encodeArgs = (args: Record<string, unknown>) =>
+              btoa(JSON.stringify(args));
+
+            kind = {
+              FunctionCall: {
+                receiver_id: USDC_CONTRACT,
+                actions: [
+                  {
+                    method_name: "storage_deposit",
+                    args: encodeArgs({
+                      account_id: recipient,
+                      registration_only: true,
+                    }),
+                    deposit: registrationDeposit,
+                    gas: "30000000000000",
+                  },
+                  {
+                    method_name: "ft_transfer",
+                    args: encodeArgs({
+                      receiver_id: recipient,
+                      amount: atomicAmount.toString(),
+                    }),
+                    deposit: "1",
+                    gas: "30000000000000",
+                  },
+                ],
+              },
+            };
+          } else {
+            kind = {
+              Transfer: {
+                token_id: USDC_CONTRACT,
+                receiver_id: recipient,
+                amount: atomicAmount.toString(),
+              },
+            };
+          }
+        } else {
+          kind = {
+            Transfer: {
+              token_id: "",
+              receiver_id: recipient,
+              amount: atomicAmount.toString(),
+            },
+          };
+        }
       }
 
       if (proposalType === "AddMember") {
@@ -581,7 +643,7 @@ function CommunityDashboard() {
                       </label>
                       <small>
                         {transferAsset === "USDC"
-                          ? "USDC uses 6 decimal places. The recipient must already be registered with the USDC token contract."
+                          ? "USDC uses 6 decimal places. Treasury requirement: ensure your DAO has enough NEAR to cover transaction gas and USDC recipient registration. USDC recipient registration is estimated at around 0.00125 NEAR. This fee is only needed when the recipient hasn't been registered before."
                           : "NEAR amounts support up to 24 decimal places."}
                       </small>
                     </>
