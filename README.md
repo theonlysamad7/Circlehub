@@ -44,15 +44,47 @@ CircleHub brings community organization, treasury management and financial coord
 
 ## Product Screenshots
 
-<p align="center">
-  <img src="./Screenshot_20261111-151114.png" width="48%" />
-  <img src="./Screenshot_20261111-151216.png" width="48%" />
-</p>
+Explore CircleHub's interface and core community finance experience.
 
-<p align="center">
-  <img src="./Screenshot_20261111-151537.png" width="48%" />
-  <img src="./Screenshot_20261111-151557.png" width="48%" />
-</p>
+<table>
+  <tr>
+    <td width="50%">
+      <img src="./Screenshot%202026-11-11%20214743.png" alt="CircleHub screenshot 1" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="./Screenshot%202026-11-11%20214834.png" alt="CircleHub screenshot 2" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./Screenshot%202026-11-11%20214920.png" alt="CircleHub screenshot 3" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="./Screenshot%202026-11-11%20214943.png" alt="CircleHub screenshot 4" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./Screenshot%202026-11-11%20215032.png" alt="CircleHub screenshot 5" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="./Screenshot%202026-11-11%20215132.png" alt="CircleHub screenshot 6" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <img src="./Screenshot%202026-11-11%20215213.png" alt="CircleHub screenshot 7" width="100%" />
+    </td>
+    <td width="50%">
+      <img src="./Screenshot%202026-11-11%20215246.png" alt="CircleHub screenshot 8" width="100%" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="./Screenshot%202026-11-11%20215401.png" alt="CircleHub screenshot 9" width="75%" />
+    </td>
+  </tr>
+</table>
 
 ## How it works
 
