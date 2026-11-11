@@ -10,6 +10,21 @@ CircleHub is a community finance platform built on NEAR that helps groups organi
 
 It combines blockchain-based treasury governance, cross-asset contributions and AI-assisted financial planning in one community-focused application.
 
+## Project Vision
+
+We envision a future where communities can manage shared finances
+with the same transparency and coordination they bring to their
+shared goals.
+
+Whether it is a student association funding an event, a creative
+collective pooling resources or a group supporting a community
+initiative, CircleHub aims to make contributing, planning and
+making financial decisions together easier and more accountable.
+
+Our goal is to make transparent community finance practical and
+accessible, not just for technically experienced DAO users, but
+for everyday groups working toward something together.
+
 ## Problem
 
 Clubs, student organizations, collectives and other communities regularly need to collect contributions, organize events and pay shared expenses.
