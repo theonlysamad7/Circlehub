@@ -42,6 +42,18 @@ CircleHub brings community organization, treasury management and financial coord
 - **Contribution verification:** Use wallet authorization, deposit instructions and settlement verification to record confirmed contributions.
 - **AI budget assistant:** Use NEAR AI for community-aware budget planning, fundraising estimates, expense allocation and financial guidance.
 
+## Product Screenshots
+
+<p align="center">
+  <img src="./Screenshot_20261111-151114.png" width="48%" />
+  <img src="./Screenshot_20261111-151216.png" width="48%" />
+</p>
+
+<p align="center">
+  <img src="./Screenshot_20261111-151537.png" width="48%" />
+  <img src="./Screenshot_20261111-151557.png" width="48%" />
+</p>
+
 ## How it works
 
 ### 1. Create or access a community
